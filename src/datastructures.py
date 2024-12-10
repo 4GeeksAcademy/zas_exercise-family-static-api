@@ -47,19 +47,24 @@ class FamilyStructure:
         pass
 
     def delete_member(self, id):
-        for index, member in enumerate(self._members):  # Buscar por índice y miembro
+        for index, member in enumerate(self._members):  
             if member["id"] == id:
-                return self._members.pop(index)  # Eliminar por índice
-                return None
-        # fill this method and update the return
-        
+                return self._members.pop(index) 
+            
+        """ OTRA OPCION 
+    def delete_member(self, id):
+        for member in self._members:
+            if member ["id"] == id:
+                self._members.remove(member)
+                return {"done":True}
+        pass """
 
     def get_member(self, id):
         for member in self._members:
             if member ["id"] == id:
                 return member
         # fill this method and update the return
-        
+        pass
 
     # this method is done, it returns a list with all the family members
     def get_all_members(self):
