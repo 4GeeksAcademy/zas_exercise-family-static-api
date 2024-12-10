@@ -49,7 +49,7 @@ class FamilyStructure:
     def delete_member(self, id):
         for index, member in enumerate(self._members):  
             if member["id"] == id:
-                return self._members.pop(index) 
+                return self._members.pop(index) # retorna self members q incluye el done true 
             
         """ OTRA OPCION 
     def delete_member(self, id):
